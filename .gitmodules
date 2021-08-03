@@ -1,0 +1,3 @@
+[submodule "themes/tags07"]
+	path = themes/tags07
+	url = https://github.com/tags07/hugo-tags07
