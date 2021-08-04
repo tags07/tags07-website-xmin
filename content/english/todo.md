@@ -1,51 +1,42 @@
-+++
-author = "Gopi Palaniappan"
-title = "Things to do"
-date = "2021-08-01"
-description = "List of things to experiment and post on this blog."
-tags = [
-    "todo",
-    "experiments",
-]
-categories = [
-    "todo",
-    "experiments",
-]
-series = ["Todo"]
-aliases = ["todo-list"]
-+++
+---
+title: Yihui's TODO List
+slug: todo
+---
+
+List of thins to od
+
+
+## Status
+
+this is **bold**
+
+## TODO
+
+1. Update jQuery in bookdown: https://github.com/rstudio/bookdown/issues/1118 https://github.com/rstudio/bookdown/pull/882 https://github.com/rstudio/bookdown/pull/693
+1. Revert inline CSS to `<style>`: https://github.com/rstudio/bookdown/issues/1170
+
+## Done
+
+This section is cleaned up from time to time.
+
+1. Syntax highlighting of `|>`: https://github.com/rstudio/bookdown/issues/1157
+1. `targets` engine in knitr: https://github.com/yihui/knitr/pull/2031
+1. Delete the duplicated `config/` dir: https://github.com/rstudio/blogdown/issues/644
+1. Record a video about [CSS selectors for R Markdown users](https://github.com/yihui/rmarkdown-cookbook/pull/239/files).
 
 
 
-## TODO List
-
-- Website:
-  - Add Google Analytics
-  - Donation/Paywall
-  - Ad support
-  - Fix About, Examples, Contacts page
-
-* Fizz Buzz
-- Sprite creation and motion
-  - https://codehs.com/tutorial/andy/Programming_Sprites_in_JavaScript
-  - https://www.teachwithict.com/binary-representation-of-images.html
-  - http://www.nemoquiz.com/lessmilk/
-  - http://www.lessmilk.com/games/10
-  - http://www.lessmilk.com/game/the-three-hearts/images/
-* Matrics
-* XY Plotter
-* PID Controller simulation
-* Localization in a discrete matrix
-* Localization in a analog world..but perhaps split into discrete spaces
-* Image processing.. color swap, edge detection, object recognition
-* ML/AI 
-* regenerative art
-* fractals
-* TSP art
-* Stipple art
-* Voronoi plots
-* simulation to real world art
-* ROS java
-* particle filter, kalman filter
-
-
+<script>
+document.querySelectorAll('.main a').forEach(function(el) {
+  var t = el.innerText;
+  if (!/^https:/.test(t)) return;
+  el.innerText = t.replace(/^https:\/\/(www\.)?/, '')
+    .replace(/#.*/, '')
+    .replace(/^github.com\/([^\/]+)\/([^\/]+)\/(issues|pull)\/(\d+).*/, '$1/$2#$4')
+    .replace(/^github.com\/([^\/]+)\/([^\/]+)\/(releases)\/tag\/([^\/]+).*/, '$1/$2@$4')
+    .replace(/^stackoverflow.com\/q\/(\d+).*/, 'SO/$1')
+    .replace(/^community.rstudio.com\/t\/(\d+).*/, 'RC/$1')
+    .replace(/^twitter.com\/([^\/]+)\/([^\/]+)\/(\d+).*/, 'twitter/$3')
+    .replace(/^github.com/, 'GH');
+});
+</script>
