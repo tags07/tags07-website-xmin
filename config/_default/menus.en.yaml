@@ -1,0 +1,72 @@
+  main:
+    - name: "Home"
+      identifier: "home"
+      url: "/"
+      weight: 1
+    - name: "Categories"
+      identifier: "categories"
+      weight: 2
+      url: "/categories/"
+    - name: "Tags"
+      identifier: "tags"
+      weight: 3
+      url: "/tags/"
+    - name: "About"
+      identifier: "about"
+      weight: 4
+      url: "/en/about/"
+    - name: "Blog"
+      identifier: "blog"
+      weight: 5
+      url: "/en/"
+    - name: "Todo"
+      identifier: "todo"
+      weight: 6
+      url: "/todo/"
+  en:
+    - name: "Home"
+      identifier: "home"
+      url: "/"
+      weight: 1
+    - name: "About"
+      identifier: "about"
+      weight: 2
+      url: "/en/about/"
+    - name: "Blog"
+      identifier: "blog"
+      weight: 3
+      url: "/en/"
+    - name: "Todo"
+      identifier: "todo"
+      weight: 4
+      url: "/todo/"
+  knitr:
+    - name: "Home"
+      url: "/knitr/"
+      weight: 1
+    - name: "Options"
+      url: "/knitr/options/"
+      weight: 2
+    - name: "Hooks"
+      url: "/knitr/hooks/"
+      weight: 3
+    - name: "Examples"
+      url: "/knitr/demo/"
+      weight: 4
+    - name: "FAQ"
+      url: "/knitr/faq/"
+      weight: 5
+    - name: "Github repo"
+      pre: "github"
+      url: "https://github.com/yihui/knitr"
+      weight: 6
+    - name: "Yihui Xie"
+      url: "/"
+      weight: 7
+footer:
+  - name: "imprint"
+    weight: 1
+    identifier: "imprint"
+    url: "/imprint/"
+
+
